@@ -7,7 +7,33 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
  
     </head>
+<style>
+        div.anim{width:150px;height: 150px; background-color: blue;animation-name: anim2;animation-duration: 10s; animation-iteration-count: 10;}
 
+        @keyframes anim2{
+        0%{background-color:blue;width: 0%;}
+        50%{background-color:red;width: 100%;box-shadow: 5px 10px 20px red;}
+        100%{background-color:blue;width: 0%;}
+        
+    }
+</style>
+<script>
+    function change_text(){
+       const pid = document.getElementById("pid")
+       pid.style.color="red"
+
+
+
+       function number_()
+        {
+   
+
+            alert( document.getElementById("text").innerHTML);
+        }
+    }
+
+
+</script>
     <body style="background-color: rgb(71, 71, 71);">
          <nav class="navbar navbar-expand-lg fixed-top bg-dark">
             <div class="container">
@@ -26,7 +52,7 @@
          <div class="col-lg-8" style="float:right">
             <div class="col-lg-12 bg-light rounded">
             <div class="col-md-3"style="float:right; margin:10px" ><img src="images/hoi.jpg" style="width: 100%;" class="rounded"></div>
-            <div class="col-md-9 p-3 my-1" style="float:top;"><p>Hearts of Iron IV is a grand strategy computer wargame developed by Paradox Development Studio and published by Paradox Interactive Hearts of Iron IV is a grand strategy wargame that revolves around World War II. The player may play as any nation in the world in the 1936 or 1939 start dates in single-player or multiplayer, although the game is not designed to go beyond 1948. A nation's military is divided between ground forces, naval forces, and aerial forces. For the ground forces, the player may train, customize, and command divisions consisting of various types of infantry, tanks, and other units. These divisions require equipment and manpower to fight properly.</p></div>
+            <div class="col-md-9 p-3 my-1" style="float:top;"><p id="pid">Hearts of Iron IV is a grand strategy computer wargame developed by Paradox Development Studio and published by Paradox Interactive Hearts of Iron IV is a grand strategy wargame that revolves around World War II. The player may play as any nation in the world in the 1936 or 1939 start dates in single-player or multiplayer, although the game is not designed to go beyond 1948. A nation's military is divided between ground forces, naval forces, and aerial forces. For the ground forces, the player may train, customize, and command divisions consisting of various types of infantry, tanks, and other units. These divisions require equipment and manpower to fight properly.</p><button onclick="change_text()">Change</button></div>
         </div>
 
             <div class="card col-lg-3 rounded my-1" style="float:right">
@@ -74,20 +100,26 @@
             <td> item </td>
            </tr>
            </table>
-
+           <div class="anim"><center><p style="font-size: 30px;">Hearts of iron</p></center></div>
          </div>
 
-
+ 
         <div class="col-lg-3 mt-5"><a href="pages/page4.html" target="_blank"><img src="images/dlcWT.jpg" style="width: 100%; border-radius: 10px; border:1px solid rgb(255, 255, 255)"></a></div>
         <div class="col-lg-3 mt-5"><a href="pages/page2.html" target="_blank"><img src="images/dlcBA.jpg" width="100%"style="border-radius: 10px; border:1px solid rgb(255, 255, 255)"></a></div>
         <div class="col-lg-3 mt-5"><a href="pages/page1.html" target="_blank"><img src="images/dlcmg.jpg" style="width: 100%; border-radius: 10px; border:1px solid rgb(255, 255, 255)"></a></div>
 
         </div>
         
-        <div class="bg-danger" height="100%">
-            <div class="container"><a style="float:right" href="#up" class="btn btn-warning bg-light my-2">return</a><center><div></div><p>enter your name:</p><label class="form-label" >name</label><input  style="width: 50%;"></center></div>
+        <div class="bg-danger mt-2" height="100%" >
+            <div class="container"><a style="float:right" href="#up" class="btn btn-warning bg-light my-2">return</a><center><div></div><p>enter your name:</p>
+                <input placeholder="your name ..." style="width: 50%;" id="text"><input type="checkbox"   ></input></center>
+        
+                <!--<center><button onclick="number_()">show the name!</button></center> -->
+        
+        
+        </div>
             <div class="container">
-            <div style="float:right" class="col-lg-3 bg-danger mb-2 p-4"><img src="images/Paradox.png" width="100%" class="rounded mb-2"></div>
+            <div style="float:right" class="col-lg-3 bg-danger mb-2 p-4"><img src="images/Paradox.png" width="200px" height="200px" class="rounded mb-2"></div>
             <style>
                 td {padding: 20px; background-color: white; border-radius: 5px; font-size: 20px;border: 1px solid rgb(71, 71, 71); }
             </style>
